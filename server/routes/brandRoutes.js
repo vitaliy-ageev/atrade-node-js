@@ -4,9 +4,10 @@ const Router = require('express');
 const router = new Router();
 // Импортируем контроллер
 const brandController = require('../controllers/brandController');
+const checkRole = require('../middleware/checkRoleMiddleware');
 
 // Создаем бренды
-router.post('/', brandController.create);
+router.post('/', checkRole('ADMIN'), brandController.create);
 // Получаем бренды
 router.get('/', brandController.getAll);
 // Удаляем бреднды

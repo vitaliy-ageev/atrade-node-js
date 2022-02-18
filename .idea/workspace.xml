@@ -2,21 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a566de80-647d-46e0-8a22-cdf8e9a01306" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/controllers/brandController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/controllers/deviceController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/controllers/typeController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/error/ApiError.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/middleware/ErrorHandlingMiddleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/middleware/authMiddleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/middleware/checkRoleMiddleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.env" beforeDir="false" afterPath="$PROJECT_DIR$/server/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/userController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/models.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/models.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/brandRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/brandRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/deviceRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/deviceRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/typeRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/typeRoutes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/routes/userRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/userRoutes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +86,7 @@
       <workItem from="1644348722977" duration="16000" />
       <workItem from="1644348813032" duration="10121000" />
       <workItem from="1644852944725" duration="1005000" />
-      <workItem from="1645183895499" duration="14436000" />
+      <workItem from="1645183895499" duration="16958000" />
     </task>
     <task id="LOCAL-00001" summary="Init app">
       <created>1644853930433</created>
@@ -116,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645192777047</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Описание основных контроллеров">
+      <created>1645212707313</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1645212707314</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +138,7 @@
     <MESSAGE value="Init app" />
     <MESSAGE value="Описали модель, настроили обработчик веб запросов" />
     <MESSAGE value="Описание маршрутизатора и контроллеров" />
-    <option name="LAST_COMMIT_MESSAGE" value="Описание маршрутизатора и контроллеров" />
+    <MESSAGE value="Описание основных контроллеров" />
+    <option name="LAST_COMMIT_MESSAGE" value="Описание основных контроллеров" />
   </component>
 </project>

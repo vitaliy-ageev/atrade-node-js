@@ -4,9 +4,10 @@ const Router = require('express');
 const router = new Router();
 // Импортируем контроллер
 const deviceController = require('../controllers/deviceController');
+const checkRole = require('../middleware/checkRoleMiddleware');
 
 // Создаем девайсы
-router.post('/', deviceController.create);
+router.post('/', checkRole('ADMIN'), deviceController.create);
 // Получаем девайсы
 router.get('/', deviceController.getAll);
 // Получаем девайс

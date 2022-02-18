@@ -4,9 +4,10 @@ const Router = require('express');
 const router = new Router();
 // Импортируем контроллер
 const typeController = require('../controllers/typeController');
+const checkRole = require('../middleware/checkRoleMiddleware');
 
 // Создаем типы
-router.post('/', typeController.create);
+router.post('/', checkRole('ADMIN'), typeController.create);
 // Получаем типы
 router.get('/', typeController.getAll);
 // Удаляем типы
