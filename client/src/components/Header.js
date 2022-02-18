@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import {Context} from "../index";
 
-const NavBar = () => {
+const Header = () => {
     const {user} = useContext(Context);
     return (
         <div>
@@ -10,4 +10,4 @@ const NavBar = () => {
     );
 };
 
-export default NavBar;
+export default Header;
