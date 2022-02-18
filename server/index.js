@@ -8,6 +8,8 @@ const sequelize = require('./db');
 const models = require('./models/models');
 // Импортируем Корс для веб запросов
 const cors = require('cors');
+// Импортируем основной роутер
+const router = require('./routes/index');
 // импортируем порт из настроек .env
 const PORT = process.env.PORT || 5000;
 // объявляем переменную приложения
@@ -16,6 +18,8 @@ const app = express();
 app.use(cors());
 // Разрешаем парсить json формат
 app.use(express.json());
+// Запускаем основной роутер
+app.use('/', router);
 
 const start = async () => {
     try {

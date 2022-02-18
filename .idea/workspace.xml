@@ -2,15 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a566de80-647d-46e0-8a22-cdf8e9a01306" name="Default Changelist" comment="1">
+      <change afterPath="$PROJECT_DIR$/server/controllers/userController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/brandRoutes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/deviceRoutes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/typeRoutes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/userRoutes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/.env" beforeDir="false" afterPath="$PROJECT_DIR$/server/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/models.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/models.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -65,7 +77,7 @@
       <workItem from="1644348722977" duration="16000" />
       <workItem from="1644348813032" duration="10121000" />
       <workItem from="1644852944725" duration="1005000" />
-      <workItem from="1645183895499" duration="3801000" />
+      <workItem from="1645183895499" duration="5988000" />
     </task>
     <task id="LOCAL-00001" summary="Init app">
       <created>1644853930433</created>
@@ -74,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644853930439</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Описали модель, настроили обработчик веб запросов">
+      <created>1645190172840</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1645190172840</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +113,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init app" />
+    <MESSAGE value="Описали модель, настроили обработчик веб запросов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Описали модель, настроили обработчик веб запросов" />
   </component>
 </project>
