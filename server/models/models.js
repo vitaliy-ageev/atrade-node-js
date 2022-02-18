@@ -32,6 +32,7 @@ const Device = sequelize.define('device', {
 // Модель типов
 const Type = sequelize.define('type', {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
+    name: {type: DataTypes.STRING, unique: true, allowNull: false},
 });
 
 // Модель брендов
@@ -85,7 +86,7 @@ Rating.belongsTo(Device);
 Device.hasMany(BasketDevice);
 BasketDevice.belongsTo(Device);
 
-Device.hasMany(DeviceInfo);
+Device.hasMany(DeviceInfo, {as: 'info'});
 DeviceInfo.belongsTo(Device);
 
 // Опишем тип связи между типом и брендом (многим ко многим)

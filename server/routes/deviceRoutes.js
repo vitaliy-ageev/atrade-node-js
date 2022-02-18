@@ -2,14 +2,16 @@
 const Router = require('express');
 // Создаем объект роутера
 const router = new Router();
+// Импортируем контроллер
+const deviceController = require('../controllers/deviceController');
 
 // Создаем девайсы
-router.post('/',);
+router.post('/', deviceController.create);
 // Получаем девайсы
-router.get('/',);
+router.get('/', deviceController.getAll);
 // Получаем девайс
-router.get('/:id',);
+router.get('/:id', deviceController.getOne);
 // Удаляем девайсы
-router.delete('/',);
+router.delete('/', deviceController.delete);
 
 module.exports = router;

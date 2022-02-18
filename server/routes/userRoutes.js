@@ -2,16 +2,16 @@
 const Router = require('express');
 // Создаем объект роутера
 const router = new Router();
+// Импортируем контроллер
+const userController = require('../controllers/userController');
 
 // Создаем пользователя
-router.post('/registration',);
+router.post('/registration', userController.registration);
 // Авторизовываем пользователя
-router.post('/login',);
+router.post('/login', userController.login);
 // Получаем пользователя
-router.get('/auth', (req, res) => {
-    res.json({message: 'Working'});
-});
+router.get('/auth', userController.check);
 // Удаляем пользователя
-router.delete('/',);
+router.delete('/', userController.delete);
 
 module.exports = router;
